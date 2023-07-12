@@ -11,7 +11,7 @@ import SwiftUI
 struct NorgEditorApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            DocumentView()
         }
     }
 }

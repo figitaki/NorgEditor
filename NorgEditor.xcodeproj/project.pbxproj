@@ -8,17 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		EB6908C62A58D9F20019AFFF /* NorgEditorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6908C52A58D9F20019AFFF /* NorgEditorApp.swift */; };
-		EB6908C82A58D9F20019AFFF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6908C72A58D9F20019AFFF /* ContentView.swift */; };
 		EB6908CA2A58D9F30019AFFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB6908C92A58D9F30019AFFF /* Assets.xcassets */; };
 		EB6908CD2A58D9F30019AFFF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB6908CC2A58D9F30019AFFF /* Preview Assets.xcassets */; };
+		EB6908D52A58DA040019AFFF /* SwiftTreeSitter in Frameworks */ = {isa = PBXBuildFile; productRef = EB6908D42A58DA040019AFFF /* SwiftTreeSitter */; };
+		EB6908DE2A58E1250019AFFF /* TreeSitterNorg in Frameworks */ = {isa = PBXBuildFile; productRef = EB6908DD2A58E1250019AFFF /* TreeSitterNorg */; };
+		EB6908E12A58E1730019AFFF /* TreeSitterGo in Frameworks */ = {isa = PBXBuildFile; productRef = EB6908E02A58E1730019AFFF /* TreeSitterGo */; };
+		EB6908E42A58E3370019AFFF /* NorgDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6908E32A58E3370019AFFF /* NorgDocument.swift */; };
+		EB6908E82A58E6D80019AFFF /* EditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6908E72A58E6D80019AFFF /* EditorView.swift */; };
+		EBBAC0792A5D2A2E00C00A98 /* DocumentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBAC0782A5D2A2E00C00A98 /* DocumentView.swift */; };
+		EBBAC07B2A5D2A3500C00A98 /* DocumentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBAC07A2A5D2A3500C00A98 /* DocumentViewModel.swift */; };
+		EBBAC0802A5D2B7B00C00A98 /* EditorRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBAC07F2A5D2B7B00C00A98 /* EditorRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EB6908C22A58D9F20019AFFF /* NorgEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NorgEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB6908C52A58D9F20019AFFF /* NorgEditorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorgEditorApp.swift; sourceTree = "<group>"; };
-		EB6908C72A58D9F20019AFFF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EB6908C92A58D9F30019AFFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB6908CC2A58D9F30019AFFF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EB6908E32A58E3370019AFFF /* NorgDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorgDocument.swift; sourceTree = "<group>"; };
+		EB6908E72A58E6D80019AFFF /* EditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorView.swift; sourceTree = "<group>"; };
+		EBBAC0782A5D2A2E00C00A98 /* DocumentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentView.swift; sourceTree = "<group>"; };
+		EBBAC07A2A5D2A3500C00A98 /* DocumentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentViewModel.swift; sourceTree = "<group>"; };
+		EBBAC07F2A5D2B7B00C00A98 /* EditorRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +37,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB6908E12A58E1730019AFFF /* TreeSitterGo in Frameworks */,
+				EB6908D52A58DA040019AFFF /* SwiftTreeSitter in Frameworks */,
+				EB6908DE2A58E1250019AFFF /* TreeSitterNorg in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,6 +49,7 @@
 		EB6908B92A58D9F20019AFFF = {
 			isa = PBXGroup;
 			children = (
+				EB6908D62A58DA140019AFFF /* Packages */,
 				EB6908C42A58D9F20019AFFF /* NorgEditor */,
 				EB6908C32A58D9F20019AFFF /* Products */,
 			);
@@ -51,8 +66,10 @@
 		EB6908C42A58D9F20019AFFF /* NorgEditor */ = {
 			isa = PBXGroup;
 			children = (
+				EB6908E62A58E6AD0019AFFF /* Scenes */,
+				EB6908E52A58E6510019AFFF /* Views */,
+				EB6908E22A58E32A0019AFFF /* Models */,
 				EB6908C52A58D9F20019AFFF /* NorgEditorApp.swift */,
-				EB6908C72A58D9F20019AFFF /* ContentView.swift */,
 				EB6908C92A58D9F30019AFFF /* Assets.xcassets */,
 				EB6908CB2A58D9F30019AFFF /* Preview Content */,
 			);
@@ -65,6 +82,71 @@
 				EB6908CC2A58D9F30019AFFF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EB6908D62A58DA140019AFFF /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		EB6908E22A58E32A0019AFFF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EB6908E32A58E3370019AFFF /* NorgDocument.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EB6908E52A58E6510019AFFF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EBBAC07E2A5D2AC600C00A98 /* Editor */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EB6908E62A58E6AD0019AFFF /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				EBBAC0772A5D2A1F00C00A98 /* Document */,
+				EBBAC0762A5D2A1200C00A98 /* Explorer */,
+				EBBAC0752A5D2A0400C00A98 /* Workspaces */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		EBBAC0752A5D2A0400C00A98 /* Workspaces */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Workspaces;
+			sourceTree = "<group>";
+		};
+		EBBAC0762A5D2A1200C00A98 /* Explorer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Explorer;
+			sourceTree = "<group>";
+		};
+		EBBAC0772A5D2A1F00C00A98 /* Document */ = {
+			isa = PBXGroup;
+			children = (
+				EBBAC0782A5D2A2E00C00A98 /* DocumentView.swift */,
+				EBBAC07A2A5D2A3500C00A98 /* DocumentViewModel.swift */,
+			);
+			path = Document;
+			sourceTree = "<group>";
+		};
+		EBBAC07E2A5D2AC600C00A98 /* Editor */ = {
+			isa = PBXGroup;
+			children = (
+				EB6908E72A58E6D80019AFFF /* EditorView.swift */,
+				EBBAC07F2A5D2B7B00C00A98 /* EditorRowView.swift */,
+			);
+			path = Editor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +165,11 @@
 			dependencies = (
 			);
 			name = NorgEditor;
+			packageProductDependencies = (
+				EB6908D42A58DA040019AFFF /* SwiftTreeSitter */,
+				EB6908DD2A58E1250019AFFF /* TreeSitterNorg */,
+				EB6908E02A58E1730019AFFF /* TreeSitterGo */,
+			);
 			productName = NorgEditor;
 			productReference = EB6908C22A58D9F20019AFFF /* NorgEditor.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +198,11 @@
 				Base,
 			);
 			mainGroup = EB6908B92A58D9F20019AFFF;
+			packageReferences = (
+				EB6908D32A58DA040019AFFF /* XCRemoteSwiftPackageReference "SwiftTreeSitter" */,
+				EB6908DC2A58E1250019AFFF /* XCRemoteSwiftPackageReference "tree-sitter-norg" */,
+				EB6908DF2A58E1730019AFFF /* XCRemoteSwiftPackageReference "tree-sitter-go" */,
+			);
 			productRefGroup = EB6908C32A58D9F20019AFFF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +229,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB6908C82A58D9F20019AFFF /* ContentView.swift in Sources */,
+				EB6908E82A58E6D80019AFFF /* EditorView.swift in Sources */,
+				EBBAC07B2A5D2A3500C00A98 /* DocumentViewModel.swift in Sources */,
+				EB6908E42A58E3370019AFFF /* NorgDocument.swift in Sources */,
 				EB6908C62A58D9F20019AFFF /* NorgEditorApp.swift in Sources */,
+				EBBAC0802A5D2B7B00C00A98 /* EditorRowView.swift in Sources */,
+				EBBAC0792A5D2A2E00C00A98 /* DocumentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +376,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.figitaki.NorgEditor;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.norg.NorgEditor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -309,7 +405,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.figitaki.NorgEditor;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.norg.NorgEditor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -339,6 +435,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EB6908D32A58DA040019AFFF /* XCRemoteSwiftPackageReference "SwiftTreeSitter" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ChimeHQ/SwiftTreeSitter";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.7.1;
+			};
+		};
+		EB6908DC2A58E1250019AFFF /* XCRemoteSwiftPackageReference "tree-sitter-norg" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/figitaki/tree-sitter-norg";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		EB6908DF2A58E1730019AFFF /* XCRemoteSwiftPackageReference "tree-sitter-go" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tree-sitter/tree-sitter-go";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EB6908D42A58DA040019AFFF /* SwiftTreeSitter */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB6908D32A58DA040019AFFF /* XCRemoteSwiftPackageReference "SwiftTreeSitter" */;
+			productName = SwiftTreeSitter;
+		};
+		EB6908DD2A58E1250019AFFF /* TreeSitterNorg */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB6908DC2A58E1250019AFFF /* XCRemoteSwiftPackageReference "tree-sitter-norg" */;
+			productName = TreeSitterNorg;
+		};
+		EB6908E02A58E1730019AFFF /* TreeSitterGo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB6908DF2A58E1730019AFFF /* XCRemoteSwiftPackageReference "tree-sitter-go" */;
+			productName = TreeSitterGo;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EB6908BA2A58D9F20019AFFF /* Project object */;
 }
