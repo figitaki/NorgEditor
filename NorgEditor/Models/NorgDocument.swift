@@ -12,6 +12,7 @@
 import Foundation
 import SwiftTreeSitter
 import TreeSitterNorg
+import SwiftData
 
 /// Represents a list type in the norg document.
 enum ListType {
@@ -44,9 +45,7 @@ enum ParserError: Error {
     case invalidNodeType(String)
 }
 
-struct NorgRow {
-    let id: []
-
+struct DocumentRow {
     /// Norg specific node type, maps directly to the tree-sitter node.
     let type: RowType
    
@@ -64,7 +63,8 @@ struct NorgRow {
     }
 }
 
-class NorgDocument: ObservableObject {
+@Model
+class NorgDocument {
     private var contents: String
     
     /// Tree-sitter parser for norg file type.
