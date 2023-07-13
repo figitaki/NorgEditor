@@ -27,6 +27,7 @@
 		EB6908CC2A58D9F30019AFFF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EB6908E32A58E3370019AFFF /* NorgDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorgDocument.swift; sourceTree = "<group>"; };
 		EB6908E72A58E6D80019AFFF /* EditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorView.swift; sourceTree = "<group>"; };
+		EB98592D2A5FC2D4008F4E43 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		EBBAC0782A5D2A2E00C00A98 /* DocumentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentView.swift; sourceTree = "<group>"; };
 		EBBAC07A2A5D2A3500C00A98 /* DocumentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentViewModel.swift; sourceTree = "<group>"; };
 		EBBAC07F2A5D2B7B00C00A98 /* EditorRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorRowView.swift; sourceTree = "<group>"; };
@@ -49,6 +50,7 @@
 		EB6908B92A58D9F20019AFFF = {
 			isa = PBXGroup;
 			children = (
+				EB98592D2A5FC2D4008F4E43 /* README.md */,
 				EB6908D62A58DA140019AFFF /* Packages */,
 				EB6908C42A58D9F20019AFFF /* NorgEditor */,
 				EB6908C32A58D9F20019AFFF /* Products */,
